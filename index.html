@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Padilla — Cloud &amp; AI Engineer</title>
+<meta name="description" content="Cloud &amp; AI Engineer portfolio — Azure AI Foundry projects, RAG pipelines, and agent development, built while pursuing the Microsoft AI-103 certification.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<header class="statusbar">
+  <div class="statusbar__inner">
+    <span class="statusbar__dot" aria-hidden="true"></span>
+    <span class="statusbar__text">SYSTEM STATUS — actively deploying · last build <span id="build-date">—</span></span>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="eyebrow">CLOUD &amp; AI ENGINEER · esjimenezp</p>
+      <h1 class="hero__title">Eduardo Padilla</h1>
+      <p class="hero__thesis">
+        I build and ship generative AI systems on Azure — Foundry projects, RAG pipelines, and agent
+        orchestration — and document every deployment as I prepare for the Microsoft AI-103 certification.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="https://github.com/esjimenezp" target="_blank" rel="noopener">View GitHub</a>
+        <a class="btn btn--ghost" href="mailto:eduardosamuelpadilla@outlook.com">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero__diagram" aria-hidden="true">
+      <svg id="pipeline-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- connecting lines -->
+        <path class="pipe-line" d="M 110 110 L 230 110" />
+        <path class="pipe-line" d="M 350 110 L 470 110" />
+        <path class="pipe-line" d="M 590 110 L 650 110" />
+
+        <!-- nodes -->
+        <g class="pipe-node" style="--d:0">
+          <rect x="10" y="75" width="100" height="70" rx="4"/>
+          <text x="60" y="105" class="node-title">Client</text>
+          <text x="60" y="122" class="node-sub">request</text>
+        </g>
+
+        <g class="pipe-node" style="--d:1">
+          <rect x="230" y="65" width="120" height="90" rx="4"/>
+          <text x="290" y="98" class="node-title">Foundry</text>
+          <text x="290" y="114" class="node-title">Project</text>
+          <text x="290" y="132" class="node-sub">ai.azure.com</text>
+        </g>
+
+        <g class="pipe-node" style="--d:2">
+          <rect x="470" y="65" width="120" height="90" rx="4"/>
+          <text x="530" y="98" class="node-title">gpt-4.1</text>
+          <text x="530" y="114" class="node-title">deployment</text>
+          <text x="530" y="132" class="node-sub">model endpoint</text>
+        </g>
+
+        <g class="pipe-node" style="--d:3">
+          <rect x="650" y="80" width="60" height="60" rx="4"/>
+          <text x="680" y="115" class="node-title">200</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- DEPLOYMENT LOG -->
+  <section class="section" id="log">
+    <div class="section__head">
+      <p class="eyebrow">01 · DEPLOYMENT LOG</p>
+      <h2>Projects, shipped in order</h2>
+      <p class="section__sub">Every project below is a real deployment — tracked the way I'd track any Azure resource, from provisioning to production.</p>
+    </div>
+    <div class="log" id="log-list"><!-- injected by script.js --></div>
+  </section>
+
+  <!-- SKILLS / RESOURCES -->
+  <section class="section section--panel" id="stack">
+    <div class="section__head">
+      <p class="eyebrow">02 · PROVISIONED RESOURCES</p>
+      <h2>Stack &amp; capabilities</h2>
+    </div>
+    <div class="stack-groups" id="stack-groups"><!-- injected by script.js --></div>
+  </section>
+
+  <!-- CERTIFICATION ROLLOUT -->
+  <section class="section" id="cert">
+    <div class="section__head">
+      <p class="eyebrow">03 · CERTIFICATION ROLLOUT</p>
+      <h2>AI-103 · Azure AI Apps and Agents Developer Associate</h2>
+      <p class="section__sub">Studied domain-by-domain against official Microsoft Learn sources, organized in NotebookLM.</p>
+    </div>
+
+    <div class="rollout">
+      <div class="rollout__bar-track">
+        <div class="rollout__bar-fill" id="cert-fill"></div>
+      </div>
+      <p class="rollout__caption"><span id="cert-percent">—</span>% of skills-measured domains covered</p>
+
+      <ul class="rollout__list" id="cert-list"><!-- injected by script.js --></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__title">Let's build something.</p>
+    <div class="footer__links">
+      <a href="https://github.com/esjimenezp" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:eduardosamuelpadilla@outlook.com">Email</a>
+    </div>
+    <p class="footer__meta">Built with plain HTML/CSS/JS · deployed on GitHub Pages</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
