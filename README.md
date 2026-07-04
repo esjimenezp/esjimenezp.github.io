@@ -1,36 +1,77 @@
-# Azure AI Foundry Labs
+# Eduardo Padilla — Portfolio Site 🌐
 
-Hands-on notes from the Microsoft Learn course *"Develop generative AI solutions in Azure"*
-(`mslearn-ai-studio`), documented one exercise per folder as I work through Azure AI Foundry
-in preparation for the **AI-103: Azure AI Apps and Agents Developer Associate** certification.
+[#eduardo-padilla--portfolio-site](#eduardo-padilla--portfolio-site)
 
-Portal-driven exercises (project setup, model deployment, evaluation) live here. Exercises
-that produce a real client application get their own standalone repo — linked below.
+Source for [esjimenezp.github.io](https://esjimenezp.github.io) — a "deployment log" styled portfolio tracking generative AI work on Azure: Foundry projects, RAG pipelines, and agent orchestration, documented like production work.
 
-## Labs
+---
 
-| # | Lab | Status | Notes |
-|---|-----|--------|-------|
-| 01 | [Explore AI Foundry](./01-explore-foundry) | In progress | Create a Foundry project, deploy `gpt-4.1`, test in the playground, explore the VS Code Foundry Toolkit |
-| 02 | [Model Catalog & Evaluation](./02-model-catalog-evaluation) | Planned | Compare models in the catalog, run a synthetic evaluation |
+## 📋 Overview
 
-## Related standalone repos
+[#-overview](#-overview)
 
-- [`azure-ai-chat-app`](https://github.com/esjimenezp/azure-ai-chat-app) — async chat client built on a Foundry model deployment
+Static, no-build-step site built with plain HTML/CSS/JS and deployed via GitHub Pages. The homepage presents projects as "deployments" — status badges, a build log feel, and links out to the repos where the actual work lives.
 
-## Pushing this repo
+---
 
-```bash
-cd path/to/azure-ai-foundry-labs
-git init
-git add .
-git commit -m "Add exercise 01: explore AI Foundry"
-git branch -M main
-git remote add origin https://github.com/esjimenezp/azure-ai-foundry-labs.git
-git push -u origin main
+## 🧱 Structure
+
+[#-structure](#-structure)
+
+```
+esjimenezp.github.io/
+├── index.html       # Page structure: hero, deployment log, stack, cert rollout
+├── styles.css        # Blueprint / deployment-log visual theme
+├── script.js          # Injects project cards, skills, and cert progress into the page
+└── README.md
 ```
 
-## Reference
+## 🖥️ Sections
 
-- [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
-- [mslearn-ai-studio exercises](https://microsoftlearning.github.io/mslearn-ai-studio/)
+[#️-sections](#️-sections)
+
+- **Hero** — intro + animated SVG request/response pipeline diagram
+- **Deployment Log** — project cards (rendered by `script.js`), each linking out to the repo where that work actually lives
+- **Provisioned Resources** — tech stack and tools in active use
+- **Background Process** — progress tracker across Azure AI systems knowledge areas
+
+---
+
+## 🔗 Related repos
+
+[#-related-repos](#-related-repos)
+
+The portfolio links out to where the real work lives — this repo only hosts the site itself:
+
+- [`azure-ai-foundry-labs`](https://github.com/esjimenezp/azure-ai-foundry-labs) — portal-driven Azure AI Foundry exercises, one folder per exercise
+- [`azure-ai-chat-app`](https://github.com/esjimenezp/azure-ai-chat-app) — generative AI chat client built on a Foundry model deployment
+
+---
+
+## 🛠️ Local development
+
+[#️-local-development](#️-local-development)
+
+No build step required:
+
+```bash
+git clone https://github.com/esjimenezp/esjimenezp.github.io.git
+cd esjimenezp.github.io
+open index.html   # or serve with any static file server
+```
+
+---
+
+## 🚀 Deployment
+
+[#-deployment](#-deployment)
+
+Pushes to `main` deploy automatically via GitHub Pages — no CI/CD pipeline needed for a static site.
+
+```bash
+git add .
+git commit -m "Update portfolio content"
+git push origin main
+```
+
+Live within ~1 minute at [esjimenezp.github.io](https://esjimenezp.github.io).
