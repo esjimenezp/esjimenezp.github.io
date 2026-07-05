@@ -18,7 +18,7 @@ const projects = [
   },
   {
     id: "prog-002",
-    status: "progress",
+    status: "live",
     title: "Foundry Environment Exploration",
     description:
       "Provisioning a Microsoft Foundry resource and project from scratch, deploying gpt-4.1, testing it in the model playground, and exploring the Foundry Toolkit extension for VS Code.",
