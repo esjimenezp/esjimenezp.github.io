@@ -17,14 +17,14 @@ const projects = [
     ]
   },
   {
-    id: "prog-002",
+    id: "prod-002",
     status: "live",
     title: "Foundry Environment Exploration",
     description:
       "Provisioning a Microsoft Foundry resource and project from scratch, deploying gpt-4.1, testing it in the model playground, and exploring the Foundry Toolkit extension for VS Code.",
     stack: ["Microsoft Foundry", "gpt-4.1", "VS Code Foundry Toolkit"],
     links: [
-      { label: "Lab notes →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/01-explore-foundry" }
+      { label: "Repository →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/01-explore-foundry" }
     ]
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "Comparing gpt-4.1 and gpt-4.1-mini side-by-side and running a synthetic-data evaluation against a deployment.",
     stack: ["Foundry model catalog", "Evaluations", "Benchmarking"],
     links: [
-      { label: "Lab notes →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/02-model-catalog-evaluation" }
+      { label: "Not available yet →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/02-model-catalog-evaluation" }
     ]
   },
   {
