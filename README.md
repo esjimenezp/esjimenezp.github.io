@@ -43,7 +43,7 @@ esjimenezp.github.io/
 
 The portfolio links out to where the real work lives — this repo only hosts the site itself:
 
-- [`azure-ai-foundry-labs`](https://github.com/esjimenezp/azure-ai-foundry-labs) — portal-driven Azure AI Foundry exercises, one folder per exercise
+- [`azure-ai-foundry-labs`]([https://github.com/esjimenezp/azure-ai-foundry-labs](https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/01-explore-foundry)) — portal-driven Azure AI Foundry exercises, one folder per exercise
 - [`azure-ai-chat-app`](https://github.com/esjimenezp/azure-ai-chat-app) — generative AI chat client built on a Foundry model deployment
 
 ---
