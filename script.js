@@ -35,7 +35,7 @@ const projects = [
       "Comparing gpt-4.1 and gpt-4.1-mini side-by-side and running a synthetic-data evaluation against a deployment.",
     stack: ["Foundry model catalog", "Evaluations", "Benchmarking"],
     links: [
-      { label: "Not available yet →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/02-model-catalog-evaluation" }
+      { label: "Repository →", href: "https://github.com/esjimenezp/azure-ai-foundry-labs/tree/main/02-model-catalog-evaluation" }
     ]
   },
   {
