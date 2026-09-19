@@ -29,7 +29,7 @@ const projects = [
   },
   {
     id: "plan-002b",
-    status: "planned",
+    status: "live",
     title: "Model Catalog & Evaluation",
     description:
       "Comparing gpt-4.1 and gpt-4.1-mini side-by-side and running a synthetic-data evaluation against a deployment.",
